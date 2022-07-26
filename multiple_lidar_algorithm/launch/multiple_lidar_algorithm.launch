@@ -1,0 +1,7 @@
+<launch>
+
+  <include file="$(find velodyne_pointcloud)/launch/VLP16_points_multiple.launch"/>
+
+  <node pkg="multiple_lidar_algorithm" type="multiple_lidar_algorithm_node" name="multiple_lidar_algorithm_node" respawn="true" output="screen"/>
+
+</launch>
